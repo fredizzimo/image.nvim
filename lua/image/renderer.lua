@@ -45,6 +45,7 @@ end
 
 ---@param image Image
 local render = function(image)
+  print("global render")
   local state = image.global_state
   local term_size = utils.term.get_size()
   local image_rows = math.floor(image.image_height / term_size.cell_height)
